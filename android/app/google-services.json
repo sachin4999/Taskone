@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "533920031680",
+    "project_id": "taskone-d0e75",
+    "storage_bucket": "taskone-d0e75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533920031680:android:00a56e42964f81c6085e25",
+        "android_client_info": {
+          "package_name": "com.mohit.task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533920031680-c9v4gumsf2um26si3os8rkd2lnsg3mlh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mohit.task",
+            "certificate_hash": "1e9ed880cbd27d1eb1d4c508e30e5a706703cdce"
+          }
+        },
+        {
+          "client_id": "533920031680-a08hfb8hsr61c2hod92h99bbk4o7a6tt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcgnVB00LFEYnBvPie7v9_pO8zGD9W8jU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533920031680-a08hfb8hsr61c2hod92h99bbk4o7a6tt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
