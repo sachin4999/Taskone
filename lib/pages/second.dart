@@ -10,7 +10,7 @@ class Second extends StatefulWidget {
 }
 
 class _SecondState extends State<Second> {
-  var user = FirebaseAuth.instance.currentUser!;
+  var user = FirebaseAuth.instance.currentUser;
   //final two = googleSignIn.currentUser!;
 
   final fb = FirebaseDatabase.instance;
@@ -315,9 +315,9 @@ class _SecondState extends State<Second> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(user.displayName!),
+            Text(user.displayName),
             SizedBox(height: 10),
-            Text(user.email!),
+            Text(user.email),
             SizedBox(height: 60),
 
             //Text(two.email!),
