@@ -10,7 +10,7 @@ class Second extends StatefulWidget {
 }
 
 class _SecondState extends State<Second> {
-  var user = FirebaseAuth.instance.currentUser;
+  var user = FirebaseAuth.instance.currentUser!;
   //final two = googleSignIn.currentUser!;
 
   final fb = FirebaseDatabase.instance;
@@ -81,78 +81,6 @@ class _SecondState extends State<Second> {
       print(cityName);
     });
   }
-
-  // createAlertDialog(BuildContext context) {
-  //   return showDialog(
-  //       context: context,
-  //       builder: (context) {
-  //         return AlertDialog(
-  //           title: Text('Check-In Time'),
-  //           content: Container(
-  //             height: MediaQuery.of(context).size.height * 0.08,
-  //             child: Column(
-  //               crossAxisAlignment: CrossAxisAlignment.start,
-  //               children: [
-  //                 Row(
-  //                   children: [
-  //                     Text('${now.day}/${now.month}/${now.year}'),
-  //                     SizedBox(width: 20),
-  //                     Text('${now.hour}:${now.minute}:${now.second}'),
-  //                     SizedBox(width: 20),
-  //                   ],
-  //                 ),
-  //                 SizedBox(height: 20),
-  //                 Text(locationMessage),
-  //               ],
-  //             ),
-  //           ),
-  //           actions: <Widget>[
-  //             TextButton(
-  //               onPressed: () {
-  //                 Navigator.pop(context);
-  //               },
-  //               child: Text('Submit'),
-  //             ),
-  //           ],
-  //         );
-  //       });
-  // }
-  //
-  // createAlertOutDialog(BuildContext context) {
-  //   return showDialog(
-  //       context: context,
-  //       builder: (context) {
-  //         return AlertDialog(
-  //           title: Text('Check-Out Time'),
-  //           content: Container(
-  //             height: MediaQuery.of(context).size.height * 0.08,
-  //             child: Column(
-  //               crossAxisAlignment: CrossAxisAlignment.start,
-  //               children: [
-  //                 Row(
-  //                   children: [
-  //                     Text('${now.day}/${now.month}/${now.year}'),
-  //                     SizedBox(width: 20),
-  //                     Text('${now.hour}:${now.minute}:${now.second}'),
-  //                     SizedBox(width: 20),
-  //                   ],
-  //                 ),
-  //                 SizedBox(height: 20),
-  //                 Text(locationMessage),
-  //               ],
-  //             ),
-  //           ),
-  //           actions: <Widget>[
-  //             TextButton(
-  //               onPressed: () {
-  //                 Navigator.pop(context);
-  //               },
-  //               child: Text('Submit'),
-  //             ),
-  //           ],
-  //         );
-  //       });
-  // }
 
   createAlertDayInDialog(BuildContext context) {
     return showDialog(
@@ -315,9 +243,9 @@ class _SecondState extends State<Second> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(user.displayName),
+            Text(user.displayName!),
             SizedBox(height: 10),
-            Text(user.email),
+            Text(user.email!),
             SizedBox(height: 60),
 
             //Text(two.email!),
